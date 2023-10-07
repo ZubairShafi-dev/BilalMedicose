@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context=".MainActivity">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomBar"
+        android:backgroundTint="@color/black"
+        android:layout_gravity="bottom"
+        app:fabCradleMargin="40dp"
+        app:fabCradleVerticalOffset="20dp"
+        app:fabCradleRoundedCornerRadius="100dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:background="@color/black"
+            android:id="@+id/bottomNavigation"
+            app:lableVisibilityMode="auto"
+            app:menu="@menu/bottom_nav_menu"
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleType="center"
+    app:layout_anchorGravity="center_horizontal"
+    android:layout_gravity="center"
+    android:layout_marginBottom="24dp"
+    android:src="@drawable/baseline_add_24"
+    />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

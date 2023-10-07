@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Medicine"
+        android:id="medicine"
+        android:icon="@drawable/baseline_medical_services_24"
+        />  <item
+        android:title="Medicine"
+        android:id="medicine"
+        android:icon="@drawable/baseline_medical_services_24"
+        />
+    <item
+        android:title=""
+        android:id="@+id/placeholder"
+        />
+    <item
+        android:title="Cosmatics"
+        android:id="@+id/cosmatics"
+        android:icon="@drawable/baseline_shopping_bag_24"
+        />
+    <item
+        android:title="General"
+        android:id="@+id/general"
+        android:icon="@drawable/baseline_home_24"
+        />
+
+</menu>
